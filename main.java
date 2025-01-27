@@ -17,12 +17,8 @@ public class main {
         numFull(-1);
         // 7 задание
         System.out.println(numText(1));
-
         // 8 задание
         strokaChislo();
-
-
-
         // 9 задание
         printYear(2024);
         //10 задание
@@ -36,9 +32,6 @@ public class main {
         arrDiagonal(5);
         //14 задание
         leniniVal(5, 4);
-
-
-
 
     }
 
