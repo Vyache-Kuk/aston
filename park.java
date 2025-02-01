@@ -9,31 +9,31 @@ public class Park {
 
     public class Attraction {
         private String attractionName;
-        private String workingHours;
+        private String workHours;
         private double cost;
 
-        public Attraction(String attractionName, String workingHours, double cost) {
+        public Attraction(String attractionName, String workHours, double cost) {
             this.attractionName = attractionName;
-            this.workingHours = workingHours;
+            this.workHours = workHours;
             this.cost = cost;
         }
 
         public void printInfo() {
             System.out.println("Name: " + attractionName);
-            System.out.println("Hours: " + workingHours);
-            System.out.println("Cost: " + cost + " Руб");
-            System.out.println("-------------------------------");
+            System.out.println("Hours: " + workHours);
+            System.out.println("Cost: " + cost + " Р\n");
+
         }
     }
 
     public static void main(String[] args) {
         Park park = new Park("Парк Кислого", "Парк");
-        Attraction rollerCoaster = park.new Attraction("Американские горки", "10:00 - 18:00 PM", 20.0);
-        Attraction ferrisWheel = park.new Attraction("Колесо обозрения", "9:00 AM - 17:00 PM", 10.0);
-        Attraction carousel = park.new Attraction("Карусель", "8:00 PM - 20:00 AM", 5.0);
+        Attraction rollerCoaster = park.new Attraction("Американские горки", "10:00 - 18:00", 200);
+        Attraction ferrisWheel = park.new Attraction("Колесо обозрения", "9:00 - 17:00", 120);
+        Attraction carting = park.new Attraction("Картинг", "8:00 - 20:00", 320);
 
         rollerCoaster.printInfo();
         ferrisWheel.printInfo();
-        carousel.printInfo();
+        carting.printInfo();
     }
 }
